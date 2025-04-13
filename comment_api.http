@@ -1,0 +1,30 @@
+### 댓글 추가
+POST http://localhost:8080/api/articles/1/comments
+Content-Type: application/json
+
+{
+  "body": "댓글 내용 4"
+}
+
+###
+
+### 단건 댓글 조회
+GET http://localhost:8080/api/comments/2
+
+###
+
+### 댓글 수정
+PUT http://localhost:8080/api/comments/2
+Content-Type: application/json
+
+{
+  "body": "수정된 댓글 내용"
+}
+
+
+### 댓글 단건 삭제
+DELETE http://localhost:8080/api/comments/3
+
+### 한번에 조회
+GET http://localhost:8080/api/articles/1/comments
+
